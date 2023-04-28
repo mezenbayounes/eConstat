@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">eConstat_Android</string>
+    <string name="cars">Your Cars</string>
+    <string name="details">Car Details</string>
+
+    <string name="manage_your_cars_insurance">Manage Your Car insurance</string>
+    <string name="choose_your_car_brand">Choose Your Car Brand</string>
+    <string name="choose_your_car_insurance">Choose Your Car insurance</string>
+    <string name="choose_your_car_type">Choose Your Car Type</string>
+    <string name="agency">Agency</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+
+    <string name="validity">Validity of Your Car Insurance</string>
+
+    <string name="brand">Brand</string>
+    <string name="type">Type</string>
+
+
+    <string name="num_serie">numero Serie</string>
+    <string name="fiscal_power">fiscal Power</string>
+    <string name="num_contrat">Num Contrat</string>
+    <string name="num_immatriculation">Matricule</string>
+    <string name="must_not_be_empty">must not be empty</string>
+    <string name="add_new_car">Add New Car</string>
+
+
+    <string name="tun">TUN</string>
+    <string-array name="brands">
+        <item> Alfa Romeo</item>
+        <item> Audi</item>
+        <item> Bentley</item>
+        <item> BMW</item>
+        <item> Brabus</item>
+        <item> Chery</item>
+        <item> Chevrolet</item>
+    </string-array>
+    <string-array name="types">
+        <item> essence</item>
+        <item> diesel</item>
+    </string-array>
+
+
+    <string-array name="insurances">
+        <item> star</item>
+        <item> amen</item>
+        <item> LMA</item>
+        <item> BST</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="car">My Cars</string>
+    <string name="profile">My Profile</string>
+    <string name="report">New accident report</string>
+
+</resources>

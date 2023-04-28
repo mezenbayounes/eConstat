@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.econstat_android.ViewModel.add_insurance">
+
+
+    <EditText
+        android:id="@+id/et_to"
+        android:layout_width="147dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toEndOf="@+id/label_from"
+        app:layout_constraintTop_toBottomOf="@+id/et_from" />
+
+    <TextView
+        android:id="@+id/label_insurance_name"
+        android:layout_width="293dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="59dp"
+        android:text="@string/choose_your_car_insurance"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_name"
+        android:layout_width="292dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/shadow_background"
+        android:entries="@array/brands"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:boxStrokeErrorColor="@color/red"
+        app:errorIconTint="@color/red"
+        app:errorTextColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_insurance_name" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lyt_num_contrat"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="335dp"
+        android:layout_height="68dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        app:boxStrokeErrorColor="@color/red"
+
+        app:errorIconTint="@color/red"
+        app:errorTextColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_num_contrat"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:hint="@string/num_contrat"
+            android:inputType="number"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lyt_agency"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="335dp"
+        android:layout_height="68dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+
+        app:boxStrokeErrorColor="@color/red"
+        app:errorIconTint="@color/red"
+        app:errorTextColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyt_num_contrat">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_agency"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:hint="@string/agency"
+            android:inputType="number"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/label_validity"
+        android:layout_width="326dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="43dp"
+        android:text="@string/validity"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyt_agency" />
+
+    <TextView
+        android:id="@+id/label_from"
+        android:layout_width="145dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/from"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_validity" />
+
+
+    <TextView
+        android:id="@+id/label_to"
+        android:layout_width="145dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/to"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_from" />
+
+    <ImageButton
+        android:id="@+id/done_btn"
+        android:layout_width="117dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="147dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_to" />
+
+    <EditText
+        android:id="@+id/et_from"
+        android:layout_width="147dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toEndOf="@+id/label_from"
+        app:layout_constraintTop_toBottomOf="@+id/label_validity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
